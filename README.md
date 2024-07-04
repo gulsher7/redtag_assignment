@@ -5,8 +5,8 @@
 ## 📱 Screenshot
 
   <div>
-  <img src="./documents/ar_home.png" alt="My Image" width="460">
-  <img src="./documents/en_home.png" alt="My Image" width="460">
+  <img src="./documents/ar_home.png" alt="My Image" width="360">
+  <img src="./documents/en_home.png" alt="My Image" width="360">
   </div>
 
 ### Video Preview of RedTag Appp
