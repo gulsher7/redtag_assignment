@@ -15,7 +15,8 @@
 
 # Key Features
 
-- **Localization**: Supports English and Arabic translations, allowing users to switch languages effortlessly.
+- **Localization**: Supports English and Arabic translations, enabling users to switch languages. It detects the phone's language upon first launch and opens in Arabic if the phone's language is set to Arabic. After the initial launch, if the user manually changes the language, the app will always open in the selected language.
+
 - **Fully Responsive Design**: Tested on small screens and tablets to ensure a consistent user experience across devices.
 - **Animations**: Add animation for selecting the language, rendering the FlatList item, and adding items to the cart.
 - **AsyncStorage And UseContext API**: If the user kills the app and opens it again, it will show the selected language and the items in the cart.
