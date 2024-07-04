@@ -1,19 +1,17 @@
 # RedTag
+
 ⚛️ RedTag is a e-commerce platform designed assignment. Whether you are browsing products, adding items to your cart. With its single component architecture, the app delivers robust performance and responsiveness across various devices, including small screens and tablets.
 
 ## 📱 Screenshot
 
   <div>
-  <img src="./documents/images/ar_home.png" alt="My Image" width="160">
-  <img src="./documents/images/ar_responsive.png" alt="My Image" width="160">
- <img src="./documents/images/en_home.png" alt="My Image" width="160">
-  <img src="./documents/images/en_responsive.png" alt="My Image" width="160">
+  <img src="./documents/ar_home.png" alt="My Image" width="160">
+  <img src="./documents/en_home.png" alt="My Image" width="160">
   </div>
 
 ### Preview of myapp
 
 <!-- https://github.com/CodeBrewLabs7/myapp/assets/56266123/e9a51ea0-f056-4b14-b4ef-f01eef8cc7de -->
-
 
 # Key Features
 
@@ -45,8 +43,7 @@
 - [intl-pluralrules](https://www.npmjs.com/package/intl-pluralrules)
 - [react-i18next](https://www.npmjs.com/package/react-i18next)
 - [@react-native-async-storage/async-storage](https://www.npmjs.com/package/@react-native-async-storage/async-storage)
-  
+
 </td>
 </tr>
 </table>
-
