@@ -1,20 +1,43 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
+import React, { useEffect } from "react";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { AppProvider } from "./src/context/AppContext";
+import Home from "./src/screens/Home";
+import "./src/translations";
 
-export default function App() {
+/**
+ * App component - Entry point of the application.
+ * It provides necessary contexts and wraps the application in a safe area provider.
+ * The main screen (Home) is rendered within the AppProvider to access global state.
+ */
+
+SplashScreen.preventAutoHideAsync();
+
+const App = () => {
+  const [loaded, error] = useFonts({
+    "Tajawal-Regular": require("./src/assets/fonts/Tajawal-Regular.ttf"),
+    "Tajawal-Bold": require("./src/assets/fonts/Tajawal-Bold.ttf"),
+    "Tajawal-Medium": require("./src/assets/fonts/Tajawal-Medium.ttf"),
+  });
+
+  useEffect(() => {
+    if (loaded || error) {
+      SplashScreen.hideAsync();
+    }
+  }, [loaded, error]);
+
+  if (!loaded && !error) {
+    return null;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <AppProvider>
+        <Home />
+      </AppProvider>
+    </SafeAreaProvider>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
