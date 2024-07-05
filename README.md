@@ -48,3 +48,8 @@ https://github.com/gulsher7/redtag_assignment/assets/56266123/436b38fc-e835-4e21
 </td>
 </tr>
 </table>
+
+## Supporting Tools and Resources
+- **FlatList Animation**: I followed this amazing artical : https://www.reactiive.io/articles/animated-flat-list
+- **Language Selector Animation**: I followed this amazing video : https://www.youtube.com/watch?v=POMaQqGu8bo
+- **JS Docs**: ChatGPT was used for assistance in writing JavaScript documentation.
